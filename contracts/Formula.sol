@@ -157,7 +157,9 @@ contract Formula {
         uint32  payInterval, 
         uint32  accrualInterval
     ) internal view returns (uint256) {
-        (uint256 result, uint8 precision) = power(aprPlusOne, accrualsPerAPR, payInterval, accrualInterval);
+        uint256 result;
+        uint8 precision;
+        (result, precision) = power(aprPlusOne, accrualsPerAPR, payInterval, accrualInterval);
         //uint256 num = result >> precision;
         //uint256 space = 18 - countDigits(num) - countDigits(principal);
         //require(space >= 0, "too many digits");

@@ -263,7 +263,7 @@ contract Glacier is SnowflakeResolver, Formula
     }
 
     /**
-     * @dev Set the Payment Schedule, to be signed via Raindrop,
+     * @dev Set the Payment Schedule, to be signed via PhoenixAuthentication,
      * determining how often interest payments are made to payee
      * @param debtID the id of the debt
      * @param _payments the Schedule enum
